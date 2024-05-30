@@ -1,46 +1,48 @@
 /* Reset CSS */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 
 /* Global Styles */
 :root {
-    --first-color: #745e96;
-    --second-color: #8436D2;
-    --third-color: #e7e7e7;
-  }
+  --first-color: #745e96;
+  --second-color: #8436D2;
+  --third-color: #e7e7e7;
+}
 
-  body{
-    color: var(--third-color);
-  }
-  
+body {
+  color: var(--third-color);
+}
 
-  .fira-sans-light {
-    font-family: "Fira Sans", sans-serif;
-    font-weight: 300;
-    font-style: normal;
-  }
-  
-  .header__container{
-background-color: var(--first-color);
-display: flex;
-  }
 
-  .nav__list{
-    display: flex;
-    list-style: none;
-    gap: 1rem;
-  }
+.fira-sans-light {
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
 
-  .nav__link{
-text-decoration: none;
-color: var(--third-color);
-  }
-  
+.header__container {
+  background-color: var(--first-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  .header__img{
-    width: 8rem;
-  }
+.nav__list {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: var(--third-color);
+}
+
+
+.header__img {
+  width: 6rem;
+}
