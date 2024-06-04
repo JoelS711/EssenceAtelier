@@ -8,8 +8,8 @@
 
 /* Global Styles */
 :root {
-  --first-color: #745e96;
-  --second-color: #8436D2;
+  --first-color: #e7ddff;
+  --second-color: #745e96;
   --third-color: #e7e7e7;
 }
 
@@ -29,19 +29,61 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  padding: 1rem;
+}
+
+.header__logo{
+  transition: .2s ease;
+}
+
+.header__logo:hover{
+  transform: scale(1.1);
+	cursor: pointer;
 }
 
 .nav__list {
   display: flex;
+  align-items: center;
   list-style: none;
   gap: 1rem;
 }
 
 .nav__link {
   text-decoration: none;
-  color: var(--third-color);
+  color: var(--second-color);
 }
 
+.nav__item{
+  transition: .2s ease;
+}
+
+.nav__item:hover{
+  transform: scale(1.1);
+	cursor: pointer;
+}
+
+.nav__item--contact{
+  background-color: #fff;
+  border-radius: .4rem;
+  padding: .2rem;
+  transition: .2s ease;
+  border:solid 1px #745e96;
+  
+}
+
+.nav__item--contact:hover{
+  transform: scale(1.1);
+	cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(173,0,255,0.75);
+-webkit-box-shadow: 0px 0px 10px 0px rgba(173,0,255,0.75);
+-moz-box-shadow: 0px 0px 10px 0px rgba(173,0,255,0.75);
+}
+
+.nav__link--contact{
+  text-decoration: none;
+  list-style: none;
+  color: var(--second-color);
+}
 
 .header__img {
   width: 6rem;
