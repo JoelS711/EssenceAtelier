@@ -232,4 +232,52 @@ body {
 
 .products__img{
   height: 32rem;
+  border-radius: 1rem;
+  border: 4px solid var(--second-color);
+}
+
+.separator{
+  display: flex;
+  justify-content: center;
+  width: 90%;
+  border: 1px solid var(--second-color);
+  margin: 1rem;
+}
+
+
+/* Contact */
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--third-color);
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.contact__title{
+  color: var(--second-color);
+}
+
+.contact__description{
+  color: var(--second-color);
+  text-align: center;
+  width: 80%;
+}
+
+.contact__information{
+  display: flex;
+  border: 2px solid var(--second-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.contact__socialmedia{
+  transition: .4s ease;
+}
+
+.contact__socialmedia:hover{
+  transform: scale(1.1);
 }
