@@ -160,8 +160,8 @@ body {
 
 @keyframes slideshow {
   0% { background-image: url('../assets/background.png'); }
-  50% { background-image: url('../assets/background4.png'); }
-  100% { background-image: url('../assets/background5.png'); }
+  50% { background-image: url('./assets/background4.png'); }
+  100% { background-image: url('/assets/background5.png'); }
 }
 
 /* About */
