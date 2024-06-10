@@ -128,6 +128,9 @@ body {
 }
 
 .presentation__contact{
+  display: flex;
+  align-items: center;
+  gap: .4rem;
   background-color: #745e96;
   color: #fff;
   text-decoration: none;
@@ -136,6 +139,11 @@ body {
   padding: 1rem;
   font-size: 1.2rem;
   border: 1px solid white;
+}
+
+.presentation__icon{
+  width: 1.4rem;
+  height: 1.4rem;
 }
 
 .presentation__contact:hover{
