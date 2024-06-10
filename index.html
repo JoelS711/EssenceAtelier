@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page">
@@ -45,10 +46,43 @@
         <section class="products">
             <div class="products__title">
                 <h3 class="products__title">Nuestros Productos</h3>
-                <p class="products__description">Elaborados con aceites esenciales y extractos naturales para cuidar tu piel.</p>
             </div>
             <h4 class="products__soaps">Jabones</h4>
-            <h4 class="products__candle">Velas</h4>
+            <p class="products__description">Elaborados con aceites esenciales y extractos naturales para cuidar tu piel.</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper products__images">
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0001.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0002.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0003.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0004.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0005.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0006.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0007.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0008.png" alt="Image Soap" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgSoaps/S0009.png" alt="Image Soap" class="products__img"></div>
+                </div>
+            </div>
+            <h4 class="products__candles">Velas</h4>
+            <p class="products__description">Velas hechas a mano con fragancias naturales para crear un ambiente acogedor.</p>
+            <div class="swiper-container">
+                <div class="swiper-wrapper products__images">
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0001.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0002.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0003.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0004.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0005.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0006.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0007.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0008.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0009.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0010.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0011.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0012.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0013.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0014.png" alt="Image Candle" class="products__img"></div>
+                    <div class="swiper-slide"><img src="assets/ImgCandles/C0015.png" alt="Image Candle" class="products__img"></div>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -59,5 +93,27 @@
             <p class="footer__text">&copy; 2024 Essence Atelier. Todos los derechos reservados.</p>
         </div>
     </footer>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Inicializar Swiper -->
+    <script>
+        const swiper = new Swiper(".swiper-container", {
+          spaceBetween: 30,
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          centeredSlidesBounds: true,
+          slidesPerView: "auto",
+          loop: true,
+          coverflowEffect: {
+            depth: 500,
+            modifier: 1,
+            slidesShadows: true,
+            rotate: 0,
+            stretch: 0
+          }
+        })
+      </script>
 </body>
 </html>
