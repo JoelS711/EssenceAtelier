@@ -281,3 +281,15 @@ body {
 .contact__socialmedia:hover{
   transform: scale(1.1);
 }
+
+/* Footer */
+
+.footer{
+  background-color: var(--first-color);
+  color: var(--second-color);
+  padding: 2rem;
+}
+
+.footer__text{
+  text-align: center;
+}
