@@ -237,6 +237,7 @@ body {
 
 .products__img{
   height: 32rem;
+  display: block;
   border-radius: 1rem;
   border: 4px solid var(--second-color);
 }
