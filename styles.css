@@ -68,11 +68,10 @@ body {
 }
 
 .nav__item--contact{
-  background-color: #fff;
+  background-color: var(--second-color);
   border-radius: .4rem;
   padding: .2rem;
   transition: .2s ease;
-  border:solid 1px #745e96;
   
 }
 
@@ -87,7 +86,7 @@ body {
 .nav__link--contact{
   text-decoration: none;
   list-style: none;
-  color: var(--second-color);
+  color: #fff;
 }
 
 .header__img {
@@ -144,7 +143,6 @@ body {
   transition: .4s ease;
   padding: 1rem;
   font-size: 1.2rem;
-  border: 1px solid white;
 }
 
 .presentation__icon{
