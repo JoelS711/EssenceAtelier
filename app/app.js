@@ -44,6 +44,11 @@ document.addEventListener("DOMContentLoaded", function () {
       })
       .catch((error) => console.error("Error fetching images:", error));
   }
+  loadImages(
+    "./app/bouquetAndKitImg.json",
+    ".swiper-wrapper.products__images.bouquetandkit",
+    "Image Bouquet of Flowers And Kits"
+  );
 
   loadImages(
     "./app/soapsImg.json",
